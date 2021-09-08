@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Html Forms</title>
+  <link rel="stylesheet" href="script.css">
+   <script src="script.js"></script>
+
+</head>
+<body>
+
+<div id="main"> 
+
+<form action="https://www.guvi.in/" method="POST">
+<fieldset>
+  
+<legend><b>Registration Form</legend>
+  <label for="fname">First Name</label><br>
+  <input type="text" id="fname" name= "fname" placeholder="First Name" pattern="[A-Z]{10}"><br><br>
+
+  <label for="lname">Last Name</label><br>
+  <input type="text" id="lname" name= "lname" placeholder="Last Name"><br><br>
+  
+  <label for="email">Email</label><br>
+  <input type="email" id="email" name= "email" placeholder="Email"><br><br> 
+
+  <label for="Birthday">Birthday</label><br>
+  <input type="date" id="Birthday" name= "Birthday" required><br><br>
+
+
+<button id="submit">Submit</button>
+
+</fieldset>
+
+<fieldset>
+<legend>Rating</legend>
+<label for="Points">Points from 0 to 10</label>
+<input type="range" name="points" id="points" step="0.1" min="0" max="10" onchange="updateText(this.value)">
+<input type="number" id="textinput">
+</fieldset>
+
+</form>
+</div>
+</body>
+</html>
